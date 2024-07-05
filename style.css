@@ -1,0 +1,104 @@
+/* Add styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.logo{
+    position: absolute;
+    width: 7.5rem;
+    height: 3rem;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.main_container_input_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10.5rem 2.5rem 4.5rem 15rem;
+}
+
+.main_container_input_section_input{
+    display: flex;
+    color: #0A3871;
+    font-size: 2rem;
+    line-height: 3rem;
+    border: none;
+    background-color: #F3F5FC;
+    outline: none;
+    resize: vertical;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main_container_input_section_input::placeholder{
+    color: #0A3871;
+}
+
+.main_container_input_section_buttons_and_text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main_container_input_section_buttons_container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main_container_input_section_button{
+    padding: 1.5rem;
+    width: 17.5rem;
+    border-radius: 24px;
+    border: none;
+    background-color: #0A3871;
+    color: white;
+    font-size: 1rem;
+}
+
+.desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.main_container_input_section_alert_message{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 3rem;
+    color: #495057;
+    font-size: 0.8rem;
+}
+
+.exclamacion_logo{
+    width: 1rem;
+    height: 1rem;
+}
+
+.main_container_result_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin: 2.5rem;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
