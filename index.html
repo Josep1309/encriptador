@@ -18,8 +18,7 @@
   <main class="main_container">
 
     <section class="main_container_input_section">
-
-      <input type="text" class="main_container_input_section_input" placeholder="Ingrese el texto aqui">
+      <input id="myInput" type="text" class="main_container_input_section_input" placeholder="Ingrese el texto aqui">
       
       <div class="main_container_input_section_buttons_and_text_container">
         <div class="main_container_input_section_alert_message">
@@ -32,15 +31,13 @@
           <button id="desencriptar" class="main_container_input_section_button desencriptar">Desencriptar</button>
         </div>
       </div>
-
     </section>
 
-    <section class="main_container_result_section">
-      <div>
-        <img src="assets/muneco.png" alt="muñeco sentado" class="image_result">
-        <h1 class="result_title">Ningún mensaje fue encontrado</h1>
+    <section id="result_section" class="main_container_result_section">
+        <img id="image_result" src="assets/muneco.png" alt="muñeco sentado" class="image_result">
+        <h1 id="result_title" class="result_title">Ningún mensaje fue encontrado</h1>
         <p id="result_text" class="result_text">Ingresa el texto que desees encriptar o desencriptar.</p>
-      </div>
+        <button id="copy" class="main_container_input_section_button copy">Copiar</button>
     </section>
   </main>
   <script defer type="text/javascript" src="/main.js"></script>

@@ -96,11 +96,15 @@ body {
 .main_container_result_section{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     border-radius: 2rem;
     margin: 2.5rem;
     box-shadow: 0px 24px 32px -8px #00000014;
+    width: 25rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .image_result{
@@ -116,9 +120,60 @@ body {
 }
 
 .result_text{
-    margin-left: 2rem;
+    margin: 0 2rem;
     font-size: 1rem;
     color: #495057;
     text-align: center;
     font-weight: 400;
+}
+
+.copy{
+    display: none;
+    margin: 2rem;
+    background-color: #ffffff;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F3F5FC;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0A3871;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .main_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main_container_input_section{
+        margin: 15rem 2.5rem 2rem 2.5rem;
+    }
+
+    .main_container_result_section{
+        margin: 2rem 2.5rem 2.5rem 2.5rem;
+        width: 100vw;
+    }
+
+    .image_result{
+        display: none;
+    }
+
+    .result_title{
+        margin: 2rem 2rem 0.5rem 2rem;
+    }
+
+    .result_text{
+        margin: 0.5rem 2rem 2rem 2rem;
+    }
 }
