@@ -8,6 +8,10 @@ La letra "u" es convertida para "ufat"
 
 document.getElementById("encriptar").addEventListener("click", function() {
   var inputValue = document.getElementById("myInput").value;
+  if (inputValue == "") {
+    alert("Por favor ingrese un texto");
+    return;
+  }
   var encriptedText = inputValue.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
   document.getElementById("result_text").innerHTML = encriptedText;
 
@@ -19,6 +23,10 @@ document.getElementById("encriptar").addEventListener("click", function() {
 
 document.getElementById("desencriptar").addEventListener("click", function() {
   var inputValue = document.getElementById("myInput").value;
+  if (inputValue == "") {
+    alert("Por favor ingrese un texto");
+    return;
+  }
   var desencriptedText = inputValue.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
   document.getElementById("result_text").innerHTML = desencriptedText;
 
